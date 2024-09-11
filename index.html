@@ -13,11 +13,12 @@
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
-        'opsz' 24
+        'opsz' 24,
+        'font-size' 24
         }
     </style>
 </head>
-<body>
+<body class="m-0 p-0">
     <div class="container flex bg-gray-300">
         <div class="sidebar flex flex-col ml-2 mt-2 border-4 border-gray-500 item-start">
             <h1 class="text-3xl font-bold text-red-500">NETFLIX</h1>
@@ -46,13 +47,34 @@
                     <h4 class="absolute font-boldabsolute bottom-0 w-full bg-gray-700 text-white text-lg">The Night Agent</h4>
                 </div>
                 <div class="relative">
-                    <img src="1532.webp"  class="w-64 h-40 object-cover" alt="image1">
+                    <img src="1532.webp" class="w-64 h-40 object-cover" alt="image1">
                     <h4 class="absolute font-boldabsolute bottom-0 w-full bg-gray-700 text-white text-lg">The Night Agent</h4>
                 </div>
             </div>
         </div>
-        <div class="right">
-            <div class="nav"></div>
+        <div class="right flex flex-col ml-5 mt-2 border-4 border-gray-500 flex-grow">
+            <div class="flex row items-center justify-between"> 
+                <div class="flex items-start">
+                    <div class="nav row flex">
+                        <span class="material-symbols-outlined"> arrow_back_ios_new</span>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </div>
+                    <div class="search">
+                        <span class="material-symbols-outlined text-2x1">mic</span>
+                        <input type="text" placeholder="search">
+                    </div>
+                </div>
+                <div class="flex row flex items-center">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="material-symbols-outlined">person</span>
+                    <div class="user flex row">
+                        <div class="flex flex-col">
+                            <h5>Samantha G.</h5>
+                            <h5>@Samantha</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
